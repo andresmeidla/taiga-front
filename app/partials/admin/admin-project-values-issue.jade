@@ -29,4 +29,6 @@ div.wrapper(ng-controller="ProjectValuesSectionController")
             type="issue-types")
             include ../includes/modules/admin/project-types
 
-        include ../includes/modules/admin/project-issue-csv
+        - var csvType = "Issues";
+        - var controller = "CsvExporterIssuesController";
+        include ../includes/modules/admin/project-csv

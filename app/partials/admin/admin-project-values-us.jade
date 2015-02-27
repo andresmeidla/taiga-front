@@ -19,4 +19,6 @@ div.wrapper(ng-controller="ProjectValuesSectionController")
             type="points")
             include ../includes/modules/admin/project-points
 
-        include ../includes/modules/admin/project-us-csv
+        - var csvType = "US";
+        - var controller = "CsvExporterUserstoriesController";
+        include ../includes/modules/admin/project-csv

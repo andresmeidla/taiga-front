@@ -15,4 +15,6 @@ div.wrapper(ng-controller="ProjectValuesSectionController")
 
             include ../includes/modules/admin/project-status
 
-        include ../includes/modules/admin/project-task-csv
+        - var csvType = "Task";
+        - var controller = "CsvExporterTasksController";
+        include ../includes/modules/admin/project-csv
